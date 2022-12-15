@@ -30,7 +30,7 @@ async def get_morphemes(content: str) -> Set[str]:
     return results
 
 
-@app.post("/poppers")
-async def read_root(content_request: MorphemeRequest) -> MorphemeResponse:
+@app.post("/morphemes")
+async def morphemes_post(content_request: MorphemeRequest) -> MorphemeResponse:
     morphemes: Set[str] = await get_morphemes(content_request.content)
     return MorphemeResponse(morphemes=morphemes)
