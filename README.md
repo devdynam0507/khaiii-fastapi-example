@@ -15,6 +15,8 @@ Use `dynam0507/khaiii-fastapi`.
 
 ## usage
 ```shell
+git clone https://github.com/devdynam0507/khaiii-fastapi-example.git
+cd khaiii-fastapi-example
 ./run.sh
 ```
 
